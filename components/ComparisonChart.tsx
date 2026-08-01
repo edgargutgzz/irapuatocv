@@ -87,7 +87,6 @@ export default function ComparisonChart({ rows }: Props) {
           <LabelList
             dataKey="tasa"
             position="top"
-            formatter={(v: number) => v.toFixed(0)}
             content={(props) => {
               const { x, y, width, value, index } = props as { x: number; width: number; y: number; value: number; index: number };
               const row = sorted[index];
