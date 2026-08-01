@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: var(--font-rubik), system-ui, sans-serif;
+
+  /* Brand */
+  --icv-red: #a90000;
+  --icv-red-dark: #e0605f;
+  --icv-gray: #6f7a7b;
+
+  /* Categorical (validated: node scripts/validate_palette.js) */
+  --series-red: #a90000;
+  --series-blue: #1f5f9e;
+  --series-amber: #a86a00;
+  --series-teal: #0e7a58;
+
+  /* Surfaces & chrome */
+  --surface-1: #fdfaf8;
+  --page-plane: #f6f2ef;
+  --text-primary: #201c1a;
+  --text-secondary: #5c5650;
+  --text-muted: #8b847c;
+  --gridline: #e7e1da;
+  --baseline: #cac2b8;
+  --border: rgba(32, 28, 26, 0.1);
+
+  /* Status (fixed, never themed) */
+  --status-good: #0ca30c;
+  --status-warning: #fab219;
+  --status-serious: #ec835a;
+  --status-critical: #d03b3b;
+}
+
+@theme inline {
+  --font-sans: var(--font-rubik), system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--page-plane);
+  color: var(--text-primary);
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.drawer-slide {
+  animation: slideInLeft 0.28s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+}
+
+.drawer-backdrop {
+  animation: fadeIn 0.28s ease forwards;
+}

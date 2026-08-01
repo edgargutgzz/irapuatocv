@@ -1,0 +1,2752 @@
+{
+  "meta": {
+    "fuente": "Observatorio Ciudadano Irapuato ¿Cómo Vamos? — Reporte de Incidencia Delictiva",
+    "reporteMes": "2026-06",
+    "sourceUrl": "https://irapuatocomovamos.org/wp-content/uploads/2026/07/RID-JUNIO-2026-VF.pdf",
+    "notas": {
+      "2026": "Las cifras de 2026 son acumuladas de enero a junio (parcial, no año completo). La tasa 2026 es una proyección a 12 meses para poder compararla con años anteriores.",
+      "homicidioDoloso": "El delito de homicidio doloso incluye feminicidio en los totales agregados del reporte original."
+    }
+  },
+  "delitos": [
+    "Homicidio doloso",
+    "Feminicidio",
+    "Homicidio culposo",
+    "Secuestro",
+    "Extorsión",
+    "Robo con violencia",
+    "Robo de vehículo",
+    "Robo de motocicletas",
+    "Robo a casa habitación",
+    "Robo a negocio",
+    "Robo a transeúntes",
+    "Robo transporte público",
+    "Violación",
+    "Violencia familiar",
+    "Trata de personas",
+    "Narcomenudeo",
+    "Lesiones dolosas"
+  ],
+  "geografias": [
+    "Guanajuato",
+    "Irapuato"
+  ],
+  "ciudadesComparativo": [
+    "México",
+    "Guanajuato",
+    "León",
+    "Irapuato",
+    "Celaya",
+    "Salamanca",
+    "Silao",
+    "Pénjamo",
+    "San Miguel de Allende"
+  ],
+  "annual": [
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 2853,
+      "tasa": 45.43,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 2655,
+      "tasa": 41.94,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 2607,
+      "tasa": 40.86,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 2568,
+      "tasa": 39.96,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 2053,
+      "tasa": 31.73,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 655,
+      "tasa": 20.11,
+      "partial": true
+    },
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 225,
+      "tasa": 36.51,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 263,
+      "tasa": 42.31,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 219,
+      "tasa": 34.95,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 262,
+      "tasa": 41.51,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 239,
+      "tasa": 37.61,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio doloso",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 123,
+      "tasa": 38.47,
+      "partial": true
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 30,
+      "tasa": 0.97,
+      "partial": false
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 21,
+      "tasa": 0.67,
+      "partial": false
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 26,
+      "tasa": 0.8,
+      "partial": false
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 15,
+      "tasa": 0.46,
+      "partial": false
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 18,
+      "tasa": 0.54,
+      "partial": false
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 11,
+      "tasa": 0.66,
+      "partial": true
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 6,
+      "tasa": 1.9,
+      "partial": false
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 4,
+      "tasa": 1.25,
+      "partial": false
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 1,
+      "tasa": 0.31,
+      "partial": false
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 3,
+      "tasa": 0.92,
+      "partial": false
+    },
+    {
+      "delito": "Feminicidio",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 3,
+      "tasa": 1.83,
+      "partial": true
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 850,
+      "tasa": 13.53,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 879,
+      "tasa": 13.88,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 1059,
+      "tasa": 16.6,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 1219,
+      "tasa": 18.97,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 1266,
+      "tasa": 19.56,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 713,
+      "tasa": 21.89,
+      "partial": true
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 130,
+      "tasa": 38.15,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 137,
+      "tasa": 22.04,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 159,
+      "tasa": 25.38,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 224,
+      "tasa": 35.49,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 206,
+      "tasa": 32.42,
+      "partial": false
+    },
+    {
+      "delito": "Homicidio culposo",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 105,
+      "tasa": 32.84,
+      "partial": true
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 10,
+      "tasa": 0.18,
+      "partial": false
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 8,
+      "tasa": 0.14,
+      "partial": false
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 6,
+      "tasa": 0.09,
+      "partial": false
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 9,
+      "tasa": 0.14,
+      "partial": false
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 12,
+      "tasa": 0.19,
+      "partial": false
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 3,
+      "tasa": 0.11,
+      "partial": true
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 0,
+      "tasa": 0.33,
+      "partial": false
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 1,
+      "tasa": 0.16,
+      "partial": false
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 1,
+      "tasa": 0.16,
+      "partial": false
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 3,
+      "tasa": 0.48,
+      "partial": false
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 6,
+      "tasa": 0.94,
+      "partial": false
+    },
+    {
+      "delito": "Secuestro",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": true
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 291,
+      "tasa": 4.63,
+      "partial": false
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 523,
+      "tasa": 8.26,
+      "partial": false
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 801,
+      "tasa": 12.56,
+      "partial": false
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 1027,
+      "tasa": 15.98,
+      "partial": false
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 1275,
+      "tasa": 19.7,
+      "partial": false
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 642,
+      "tasa": 19.71,
+      "partial": true
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 58,
+      "tasa": 0.33,
+      "partial": false
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 58,
+      "tasa": 9.33,
+      "partial": false
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 104,
+      "tasa": 16.6,
+      "partial": false
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 102,
+      "tasa": 16.16,
+      "partial": false
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 235,
+      "tasa": 36.98,
+      "partial": false
+    },
+    {
+      "delito": "Extorsión",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 153,
+      "tasa": 47.86,
+      "partial": true
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 9900,
+      "tasa": 157.63,
+      "partial": false
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 9557,
+      "tasa": 150.95,
+      "partial": false
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 9059,
+      "tasa": 142,
+      "partial": false
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 9974,
+      "tasa": 155.21,
+      "partial": false
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 9262,
+      "tasa": 143.13,
+      "partial": false
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 3552,
+      "tasa": 109.06,
+      "partial": true
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 1217,
+      "tasa": 197.46,
+      "partial": false
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 1243,
+      "tasa": 199.97,
+      "partial": false
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 1280,
+      "tasa": 204.29,
+      "partial": false
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 1982,
+      "tasa": 314.02,
+      "partial": false
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 1841,
+      "tasa": 289.71,
+      "partial": false
+    },
+    {
+      "delito": "Robo con violencia",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 614,
+      "tasa": 192.06,
+      "partial": true
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 3636,
+      "tasa": 57.89,
+      "partial": false
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 3843,
+      "tasa": 60.7,
+      "partial": false
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 3708,
+      "tasa": 58.12,
+      "partial": false
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 3575,
+      "tasa": 55.63,
+      "partial": false
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 3170,
+      "tasa": 48.99,
+      "partial": false
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 1072,
+      "tasa": 32.92,
+      "partial": true
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 247,
+      "tasa": 40.08,
+      "partial": false
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 262,
+      "tasa": 42.15,
+      "partial": false
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 361,
+      "tasa": 57.62,
+      "partial": false
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 432,
+      "tasa": 68.44,
+      "partial": false
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 288,
+      "tasa": 45.32,
+      "partial": false
+    },
+    {
+      "delito": "Robo de vehículo",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 115,
+      "tasa": 35.97,
+      "partial": true
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 0,
+      "tasa": 0,
+      "partial": false
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 2773,
+      "tasa": 42.85,
+      "partial": false
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 1722,
+      "tasa": 52.87,
+      "partial": true
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 482,
+      "tasa": 75.85,
+      "partial": false
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 255,
+      "tasa": 79.76,
+      "partial": true
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 4375,
+      "tasa": 69.66,
+      "partial": false
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 4159,
+      "tasa": 65.69,
+      "partial": false
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 3573,
+      "tasa": 56.01,
+      "partial": false
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 3138,
+      "tasa": 48.83,
+      "partial": false
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 2886,
+      "tasa": 44.6,
+      "partial": false
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 1278,
+      "tasa": 39.24,
+      "partial": true
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 419,
+      "tasa": 67.99,
+      "partial": false
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 384,
+      "tasa": 61.78,
+      "partial": false
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 331,
+      "tasa": 52.83,
+      "partial": false
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 277,
+      "tasa": 43.89,
+      "partial": false
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 266,
+      "tasa": 41.86,
+      "partial": false
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 123,
+      "tasa": 38.47,
+      "partial": true
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 4199,
+      "tasa": 66.86,
+      "partial": false
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 4168,
+      "tasa": 65.83,
+      "partial": false
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 3772,
+      "tasa": 59.13,
+      "partial": false
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 4502,
+      "tasa": 70.06,
+      "partial": false
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 4436,
+      "tasa": 68.55,
+      "partial": false
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 2202,
+      "tasa": 67.61,
+      "partial": true
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 540,
+      "tasa": 87.62,
+      "partial": false
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 606,
+      "tasa": 97.49,
+      "partial": false
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 507,
+      "tasa": 80.92,
+      "partial": false
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 1001,
+      "tasa": 158.59,
+      "partial": false
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 986,
+      "tasa": 155.16,
+      "partial": false
+    },
+    {
+      "delito": "Robo a negocio",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 498,
+      "tasa": 155.77,
+      "partial": true
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 206,
+      "tasa": 3.28,
+      "partial": false
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 340,
+      "tasa": 5.37,
+      "partial": false
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 378,
+      "tasa": 5.93,
+      "partial": false
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 473,
+      "tasa": 7.36,
+      "partial": false
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 386,
+      "tasa": 5.97,
+      "partial": false
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 139,
+      "tasa": 4.27,
+      "partial": true
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 12,
+      "tasa": 1.95,
+      "partial": false
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 68,
+      "tasa": 10.94,
+      "partial": false
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 100,
+      "tasa": 15.96,
+      "partial": false
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 173,
+      "tasa": 27.41,
+      "partial": false
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 142,
+      "tasa": 22.35,
+      "partial": false
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 39,
+      "tasa": 12.2,
+      "partial": true
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 0,
+      "tasa": 0,
+      "partial": false
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": true
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 0,
+      "tasa": 0,
+      "partial": false
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 0,
+      "tasa": 0,
+      "partial": false
+    },
+    {
+      "delito": "Robo transporte público",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": true
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 896,
+      "tasa": 14.27,
+      "partial": false
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 953,
+      "tasa": 15.05,
+      "partial": false
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 954,
+      "tasa": 14.95,
+      "partial": false
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 965,
+      "tasa": 15.02,
+      "partial": false
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 1101,
+      "tasa": 17.01,
+      "partial": false
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 550,
+      "tasa": 16.89,
+      "partial": true
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 142,
+      "tasa": 23.04,
+      "partial": false
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 155,
+      "tasa": 24.94,
+      "partial": false
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 161,
+      "tasa": 25.7,
+      "partial": false
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 147,
+      "tasa": 23.29,
+      "partial": false
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 179,
+      "tasa": 28.17,
+      "partial": false
+    },
+    {
+      "delito": "Violación",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 62,
+      "tasa": 19.39,
+      "partial": true
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 11624,
+      "tasa": 185.08,
+      "partial": false
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 13724,
+      "tasa": 216.77,
+      "partial": false
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 14695,
+      "tasa": 230.34,
+      "partial": false
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 15958,
+      "tasa": 248.33,
+      "partial": false
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 16626,
+      "tasa": 256.94,
+      "partial": false
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 8894,
+      "tasa": 273.09,
+      "partial": true
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 1876,
+      "tasa": 304.39,
+      "partial": false
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 2007,
+      "tasa": 322.88,
+      "partial": false
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 2151,
+      "tasa": 343.3,
+      "partial": false
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 2865,
+      "tasa": 453.91,
+      "partial": false
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 2799,
+      "tasa": 440.47,
+      "partial": false
+    },
+    {
+      "delito": "Violencia familiar",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 1531,
+      "tasa": 478.9,
+      "partial": true
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 0,
+      "tasa": 0.02,
+      "partial": false
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 0,
+      "tasa": 0,
+      "partial": false
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 4,
+      "tasa": 0.06,
+      "partial": false
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 21,
+      "tasa": 0.32,
+      "partial": false
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 14,
+      "tasa": 0.43,
+      "partial": true
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 0,
+      "tasa": 0,
+      "partial": false
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 0,
+      "tasa": 0.0,
+      "partial": false
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 5,
+      "tasa": 0.79,
+      "partial": false
+    },
+    {
+      "delito": "Trata de personas",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 1,
+      "tasa": 0.31,
+      "partial": true
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 23976,
+      "tasa": 381.74,
+      "partial": false
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 22359,
+      "tasa": 353.16,
+      "partial": false
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 19876,
+      "tasa": 311.55,
+      "partial": false
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 20211,
+      "tasa": 314.51,
+      "partial": false
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 20881,
+      "tasa": 322.69,
+      "partial": false
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 5562,
+      "tasa": 170.78,
+      "partial": true
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 535,
+      "tasa": 86.81,
+      "partial": false
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 649,
+      "tasa": 104.41,
+      "partial": false
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 442,
+      "tasa": 70.54,
+      "partial": false
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 706,
+      "tasa": 111.85,
+      "partial": false
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 1051,
+      "tasa": 165.39,
+      "partial": false
+    },
+    {
+      "delito": "Narcomenudeo",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 927,
+      "tasa": 289.97,
+      "partial": true
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Guanajuato",
+      "year": 2021,
+      "carpetas": 12460,
+      "tasa": 198.39,
+      "partial": false
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Guanajuato",
+      "year": 2022,
+      "carpetas": 13604,
+      "tasa": 214.87,
+      "partial": false
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Guanajuato",
+      "year": 2023,
+      "carpetas": 14895,
+      "tasa": 233.48,
+      "partial": false
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Guanajuato",
+      "year": 2024,
+      "carpetas": 16451,
+      "tasa": 256.0,
+      "partial": false
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Guanajuato",
+      "year": 2025,
+      "carpetas": 17152,
+      "tasa": 265.07,
+      "partial": false
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Guanajuato",
+      "year": 2026,
+      "carpetas": 9016,
+      "tasa": 276.84,
+      "partial": true
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Irapuato",
+      "year": 2021,
+      "carpetas": 1330,
+      "tasa": 215.8,
+      "partial": false
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Irapuato",
+      "year": 2022,
+      "carpetas": 1480,
+      "tasa": 238.09,
+      "partial": false
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Irapuato",
+      "year": 2023,
+      "carpetas": 1625,
+      "tasa": 259.35,
+      "partial": false
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Irapuato",
+      "year": 2024,
+      "carpetas": 1961,
+      "tasa": 310.69,
+      "partial": false
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Irapuato",
+      "year": 2025,
+      "carpetas": 2284,
+      "tasa": 359.43,
+      "partial": false
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "geografia": "Irapuato",
+      "year": 2026,
+      "carpetas": 971,
+      "tasa": 303.73,
+      "partial": true
+    }
+  ],
+  "comparativo2026": [
+    {
+      "delito": "Homicidio doloso",
+      "ciudad": "México",
+      "carpetas": 8142,
+      "tasa": 12.19,
+      "yoyRatePct": -21
+    },
+    {
+      "delito": "Homicidio doloso",
+      "ciudad": "Guanajuato",
+      "carpetas": 655,
+      "tasa": 20.11,
+      "yoyRatePct": -37
+    },
+    {
+      "delito": "Homicidio doloso",
+      "ciudad": "León",
+      "carpetas": 192,
+      "tasa": 21.94,
+      "yoyRatePct": -9
+    },
+    {
+      "delito": "Homicidio doloso",
+      "ciudad": "Irapuato",
+      "carpetas": 123,
+      "tasa": 38.47,
+      "yoyRatePct": 2
+    },
+    {
+      "delito": "Homicidio doloso",
+      "ciudad": "Celaya",
+      "carpetas": 40,
+      "tasa": 14.42,
+      "yoyRatePct": -67
+    },
+    {
+      "delito": "Homicidio doloso",
+      "ciudad": "Salamanca",
+      "carpetas": 68,
+      "tasa": 44.04,
+      "yoyRatePct": -33
+    },
+    {
+      "delito": "Homicidio doloso",
+      "ciudad": "Silao",
+      "carpetas": 16,
+      "tasa": 15.23,
+      "yoyRatePct": -16
+    },
+    {
+      "delito": "Homicidio doloso",
+      "ciudad": "Pénjamo",
+      "carpetas": 26,
+      "tasa": 31.06,
+      "yoyRatePct": -26
+    },
+    {
+      "delito": "Homicidio doloso",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 11,
+      "tasa": 11.48,
+      "yoyRatePct": -70
+    },
+    {
+      "delito": "Feminicidio",
+      "ciudad": "México",
+      "carpetas": 300,
+      "tasa": 0.87,
+      "yoyRatePct": -15
+    },
+    {
+      "delito": "Feminicidio",
+      "ciudad": "Guanajuato",
+      "carpetas": 11,
+      "tasa": 0.66,
+      "yoyRatePct": 21
+    },
+    {
+      "delito": "Feminicidio",
+      "ciudad": "León",
+      "carpetas": 3,
+      "tasa": 0.68,
+      "yoyRatePct": 19
+    },
+    {
+      "delito": "Feminicidio",
+      "ciudad": "Irapuato",
+      "carpetas": 3,
+      "tasa": 1.83,
+      "yoyRatePct": 99
+    },
+    {
+      "delito": "Feminicidio",
+      "ciudad": "Celaya",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Feminicidio",
+      "ciudad": "Salamanca",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Feminicidio",
+      "ciudad": "Silao",
+      "carpetas": 1,
+      "tasa": 1.88,
+      "yoyRatePct": 99
+    },
+    {
+      "delito": "Feminicidio",
+      "ciudad": "Pénjamo",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Feminicidio",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": -100
+    },
+    {
+      "delito": "Homicidio culposo",
+      "ciudad": "México",
+      "carpetas": 8096,
+      "tasa": 12.12,
+      "yoyRatePct": -5
+    },
+    {
+      "delito": "Homicidio culposo",
+      "ciudad": "Guanajuato",
+      "carpetas": 713,
+      "tasa": 21.89,
+      "yoyRatePct": 12
+    },
+    {
+      "delito": "Homicidio culposo",
+      "ciudad": "León",
+      "carpetas": 86,
+      "tasa": 9.83,
+      "yoyRatePct": 97
+    },
+    {
+      "delito": "Homicidio culposo",
+      "ciudad": "Irapuato",
+      "carpetas": 105,
+      "tasa": 32.84,
+      "yoyRatePct": 1
+    },
+    {
+      "delito": "Homicidio culposo",
+      "ciudad": "Celaya",
+      "carpetas": 62,
+      "tasa": 22.36,
+      "yoyRatePct": 4
+    },
+    {
+      "delito": "Homicidio culposo",
+      "ciudad": "Salamanca",
+      "carpetas": 60,
+      "tasa": 38.86,
+      "yoyRatePct": 25
+    },
+    {
+      "delito": "Homicidio culposo",
+      "ciudad": "Silao",
+      "carpetas": 29,
+      "tasa": 27.6,
+      "yoyRatePct": -5
+    },
+    {
+      "delito": "Homicidio culposo",
+      "ciudad": "Pénjamo",
+      "carpetas": 32,
+      "tasa": 38.23,
+      "yoyRatePct": 15
+    },
+    {
+      "delito": "Homicidio culposo",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 19,
+      "tasa": 19.82,
+      "yoyRatePct": 51
+    },
+    {
+      "delito": "Secuestro",
+      "ciudad": "México",
+      "carpetas": 207,
+      "tasa": 0.31,
+      "yoyRatePct": 15
+    },
+    {
+      "delito": "Secuestro",
+      "ciudad": "Guanajuato",
+      "carpetas": 3,
+      "tasa": 0.11,
+      "yoyRatePct": -40
+    },
+    {
+      "delito": "Secuestro",
+      "ciudad": "León",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": -100
+    },
+    {
+      "delito": "Secuestro",
+      "ciudad": "Irapuato",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": -100
+    },
+    {
+      "delito": "Secuestro",
+      "ciudad": "Celaya",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Secuestro",
+      "ciudad": "Salamanca",
+      "carpetas": 1,
+      "tasa": 0.78,
+      "yoyRatePct": -21
+    },
+    {
+      "delito": "Secuestro",
+      "ciudad": "Silao",
+      "carpetas": 1,
+      "tasa": 1.14,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Secuestro",
+      "ciudad": "Pénjamo",
+      "carpetas": 0,
+      "tasa": 1.19,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Secuestro",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Extorsión",
+      "ciudad": "México",
+      "carpetas": 5331,
+      "tasa": 7.98,
+      "yoyRatePct": 2
+    },
+    {
+      "delito": "Extorsión",
+      "ciudad": "Guanajuato",
+      "carpetas": 642,
+      "tasa": 19.71,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Extorsión",
+      "ciudad": "León",
+      "carpetas": 12,
+      "tasa": 1.37,
+      "yoyRatePct": -12
+    },
+    {
+      "delito": "Extorsión",
+      "ciudad": "Irapuato",
+      "carpetas": 153,
+      "tasa": 47.86,
+      "yoyRatePct": 29
+    },
+    {
+      "delito": "Extorsión",
+      "ciudad": "Celaya",
+      "carpetas": 97,
+      "tasa": 34.98,
+      "yoyRatePct": -19
+    },
+    {
+      "delito": "Extorsión",
+      "ciudad": "Salamanca",
+      "carpetas": 111,
+      "tasa": 71.88,
+      "yoyRatePct": 24
+    },
+    {
+      "delito": "Extorsión",
+      "ciudad": "Silao",
+      "carpetas": 27,
+      "tasa": 25.69,
+      "yoyRatePct": 3
+    },
+    {
+      "delito": "Extorsión",
+      "ciudad": "Pénjamo",
+      "carpetas": 20,
+      "tasa": 23.9,
+      "yoyRatePct": 32
+    },
+    {
+      "delito": "Extorsión",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 45,
+      "tasa": 46.94,
+      "yoyRatePct": 21
+    },
+    {
+      "delito": "Robo con violencia",
+      "ciudad": "México",
+      "carpetas": 64560,
+      "tasa": 96.64,
+      "yoyRatePct": -13
+    },
+    {
+      "delito": "Robo con violencia",
+      "ciudad": "Guanajuato",
+      "carpetas": 3552,
+      "tasa": 109.06,
+      "yoyRatePct": -24
+    },
+    {
+      "delito": "Robo con violencia",
+      "ciudad": "León",
+      "carpetas": 708,
+      "tasa": 80.9,
+      "yoyRatePct": -12
+    },
+    {
+      "delito": "Robo con violencia",
+      "ciudad": "Irapuato",
+      "carpetas": 614,
+      "tasa": 192.06,
+      "yoyRatePct": -34
+    },
+    {
+      "delito": "Robo con violencia",
+      "ciudad": "Celaya",
+      "carpetas": 601,
+      "tasa": 216.71,
+      "yoyRatePct": -9
+    },
+    {
+      "delito": "Robo con violencia",
+      "ciudad": "Salamanca",
+      "carpetas": 233,
+      "tasa": 150.89,
+      "yoyRatePct": -50
+    },
+    {
+      "delito": "Robo con violencia",
+      "ciudad": "Silao",
+      "carpetas": 245,
+      "tasa": 233.13,
+      "yoyRatePct": -13
+    },
+    {
+      "delito": "Robo con violencia",
+      "ciudad": "Pénjamo",
+      "carpetas": 51,
+      "tasa": 60.93,
+      "yoyRatePct": -21
+    },
+    {
+      "delito": "Robo con violencia",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 94,
+      "tasa": 98.06,
+      "yoyRatePct": 12
+    },
+    {
+      "delito": "Robo de vehículo",
+      "ciudad": "México",
+      "carpetas": 49398,
+      "tasa": 73.94,
+      "yoyRatePct": -14
+    },
+    {
+      "delito": "Robo de vehículo",
+      "ciudad": "Guanajuato",
+      "carpetas": 1072,
+      "tasa": 32.92,
+      "yoyRatePct": -33
+    },
+    {
+      "delito": "Robo de vehículo",
+      "ciudad": "León",
+      "carpetas": 174,
+      "tasa": 19.88,
+      "yoyRatePct": -10
+    },
+    {
+      "delito": "Robo de vehículo",
+      "ciudad": "Irapuato",
+      "carpetas": 115,
+      "tasa": 35.97,
+      "yoyRatePct": -21
+    },
+    {
+      "delito": "Robo de vehículo",
+      "ciudad": "Celaya",
+      "carpetas": 110,
+      "tasa": 39.66,
+      "yoyRatePct": -53
+    },
+    {
+      "delito": "Robo de vehículo",
+      "ciudad": "Salamanca",
+      "carpetas": 89,
+      "tasa": 57.64,
+      "yoyRatePct": -36
+    },
+    {
+      "delito": "Robo de vehículo",
+      "ciudad": "Silao",
+      "carpetas": 40,
+      "tasa": 38.06,
+      "yoyRatePct": -10
+    },
+    {
+      "delito": "Robo de vehículo",
+      "ciudad": "Pénjamo",
+      "carpetas": 43,
+      "tasa": 51.38,
+      "yoyRatePct": 52
+    },
+    {
+      "delito": "Robo de vehículo",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 48,
+      "tasa": 50.07,
+      "yoyRatePct": 10
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "ciudad": "México",
+      "carpetas": 20804,
+      "tasa": 31.14,
+      "yoyRatePct": 27
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "ciudad": "Guanajuato",
+      "carpetas": 1722,
+      "tasa": 52.87,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "ciudad": "León",
+      "carpetas": 465,
+      "tasa": 53.13,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "ciudad": "Irapuato",
+      "carpetas": 255,
+      "tasa": 79.76,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "ciudad": "Celaya",
+      "carpetas": 193,
+      "tasa": 69.59,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "ciudad": "Salamanca",
+      "carpetas": 104,
+      "tasa": 67.35,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "ciudad": "Silao",
+      "carpetas": 125,
+      "tasa": 118.95,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "ciudad": "Pénjamo",
+      "carpetas": 17,
+      "tasa": 20.31,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 64,
+      "tasa": 66.77,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "ciudad": "México",
+      "carpetas": 15648,
+      "tasa": 23.42,
+      "yoyRatePct": -14
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "ciudad": "Guanajuato",
+      "carpetas": 1278,
+      "tasa": 39.24,
+      "yoyRatePct": -50
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "ciudad": "León",
+      "carpetas": 306,
+      "tasa": 34.96,
+      "yoyRatePct": -14
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "ciudad": "Irapuato",
+      "carpetas": 123,
+      "tasa": 38.47,
+      "yoyRatePct": -8
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "ciudad": "Celaya",
+      "carpetas": 170,
+      "tasa": 61.3,
+      "yoyRatePct": -9
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "ciudad": "Salamanca",
+      "carpetas": 50,
+      "tasa": 32.38,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "ciudad": "Silao",
+      "carpetas": 64,
+      "tasa": 60.9,
+      "yoyRatePct": -1
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "ciudad": "Pénjamo",
+      "carpetas": 17,
+      "tasa": 20.31,
+      "yoyRatePct": -20
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 66,
+      "tasa": 68.85,
+      "yoyRatePct": -14
+    },
+    {
+      "delito": "Robo a negocio",
+      "ciudad": "México",
+      "carpetas": 31537,
+      "tasa": 47.21,
+      "yoyRatePct": -5
+    },
+    {
+      "delito": "Robo a negocio",
+      "ciudad": "Guanajuato",
+      "carpetas": 2202,
+      "tasa": 67.61,
+      "yoyRatePct": -1
+    },
+    {
+      "delito": "Robo a negocio",
+      "ciudad": "León",
+      "carpetas": 733,
+      "tasa": 83.75,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Robo a negocio",
+      "ciudad": "Irapuato",
+      "carpetas": 498,
+      "tasa": 155.77,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Robo a negocio",
+      "ciudad": "Celaya",
+      "carpetas": 338,
+      "tasa": 121.88,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Robo a negocio",
+      "ciudad": "Salamanca",
+      "carpetas": 109,
+      "tasa": 70.59,
+      "yoyRatePct": -13
+    },
+    {
+      "delito": "Robo a negocio",
+      "ciudad": "Silao",
+      "carpetas": 117,
+      "tasa": 111.33,
+      "yoyRatePct": -8
+    },
+    {
+      "delito": "Robo a negocio",
+      "ciudad": "Pénjamo",
+      "carpetas": 5,
+      "tasa": 5.97,
+      "yoyRatePct": -62
+    },
+    {
+      "delito": "Robo a negocio",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 41,
+      "tasa": 42.77,
+      "yoyRatePct": -1
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "ciudad": "México",
+      "carpetas": 34417,
+      "tasa": 51.52,
+      "yoyRatePct": 26
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "ciudad": "Guanajuato",
+      "carpetas": 139,
+      "tasa": 4.27,
+      "yoyRatePct": -28
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "ciudad": "León",
+      "carpetas": 3,
+      "tasa": 0.34,
+      "yoyRatePct": -54
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "ciudad": "Irapuato",
+      "carpetas": 39,
+      "tasa": 12.2,
+      "yoyRatePct": -45
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "ciudad": "Celaya",
+      "carpetas": 4,
+      "tasa": 1.44,
+      "yoyRatePct": 14
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "ciudad": "Salamanca",
+      "carpetas": 34,
+      "tasa": 22.02,
+      "yoyRatePct": -20
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "ciudad": "Silao",
+      "carpetas": 15,
+      "tasa": 14.27,
+      "yoyRatePct": -38
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "ciudad": "Pénjamo",
+      "carpetas": 1,
+      "tasa": 1.19,
+      "yoyRatePct": -50
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 14,
+      "tasa": 14.61,
+      "yoyRatePct": 178
+    },
+    {
+      "delito": "Robo transporte público",
+      "ciudad": "México",
+      "carpetas": 10676,
+      "tasa": 15.98,
+      "yoyRatePct": 76
+    },
+    {
+      "delito": "Robo transporte público",
+      "ciudad": "Guanajuato",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Robo transporte público",
+      "ciudad": "León",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Robo transporte público",
+      "ciudad": "Irapuato",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Robo transporte público",
+      "ciudad": "Celaya",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Robo transporte público",
+      "ciudad": "Salamanca",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Robo transporte público",
+      "ciudad": "Silao",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Robo transporte público",
+      "ciudad": "Pénjamo",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Robo transporte público",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": 0
+    },
+    {
+      "delito": "Violación",
+      "ciudad": "México",
+      "carpetas": 10077,
+      "tasa": 15.08,
+      "yoyRatePct": -1
+    },
+    {
+      "delito": "Violación",
+      "ciudad": "Guanajuato",
+      "carpetas": 550,
+      "tasa": 16.89,
+      "yoyRatePct": -1
+    },
+    {
+      "delito": "Violación",
+      "ciudad": "León",
+      "carpetas": 156,
+      "tasa": 17.82,
+      "yoyRatePct": 29
+    },
+    {
+      "delito": "Violación",
+      "ciudad": "Irapuato",
+      "carpetas": 62,
+      "tasa": 19.39,
+      "yoyRatePct": -31
+    },
+    {
+      "delito": "Violación",
+      "ciudad": "Celaya",
+      "carpetas": 75,
+      "tasa": 27.04,
+      "yoyRatePct": 4
+    },
+    {
+      "delito": "Violación",
+      "ciudad": "Salamanca",
+      "carpetas": 22,
+      "tasa": 14.25,
+      "yoyRatePct": 36
+    },
+    {
+      "delito": "Violación",
+      "ciudad": "Silao",
+      "carpetas": 17,
+      "tasa": 16.18,
+      "yoyRatePct": -9
+    },
+    {
+      "delito": "Violación",
+      "ciudad": "Pénjamo",
+      "carpetas": 10,
+      "tasa": 11.95,
+      "yoyRatePct": 32
+    },
+    {
+      "delito": "Violación",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 18,
+      "tasa": 18.78,
+      "yoyRatePct": -1
+    },
+    {
+      "delito": "Violencia familiar",
+      "ciudad": "México",
+      "carpetas": 138316,
+      "tasa": 207.04,
+      "yoyRatePct": 3
+    },
+    {
+      "delito": "Violencia familiar",
+      "ciudad": "Guanajuato",
+      "carpetas": 8894,
+      "tasa": 273.09,
+      "yoyRatePct": 6
+    },
+    {
+      "delito": "Violencia familiar",
+      "ciudad": "León",
+      "carpetas": 1637,
+      "tasa": 187.04,
+      "yoyRatePct": 12
+    },
+    {
+      "delito": "Violencia familiar",
+      "ciudad": "Irapuato",
+      "carpetas": 1531,
+      "tasa": 478.9,
+      "yoyRatePct": 9
+    },
+    {
+      "delito": "Violencia familiar",
+      "ciudad": "Celaya",
+      "carpetas": 1279,
+      "tasa": 461.18,
+      "yoyRatePct": 8
+    },
+    {
+      "delito": "Violencia familiar",
+      "ciudad": "Salamanca",
+      "carpetas": 632,
+      "tasa": 409.29,
+      "yoyRatePct": 2
+    },
+    {
+      "delito": "Violencia familiar",
+      "ciudad": "Silao",
+      "carpetas": 468,
+      "tasa": 445.33,
+      "yoyRatePct": 14
+    },
+    {
+      "delito": "Violencia familiar",
+      "ciudad": "Pénjamo",
+      "carpetas": 118,
+      "tasa": 140.98,
+      "yoyRatePct": 1
+    },
+    {
+      "delito": "Violencia familiar",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 357,
+      "tasa": 372.43,
+      "yoyRatePct": 29
+    },
+    {
+      "delito": "Trata de personas",
+      "ciudad": "México",
+      "carpetas": 508,
+      "tasa": 0.76,
+      "yoyRatePct": 61
+    },
+    {
+      "delito": "Trata de personas",
+      "ciudad": "Guanajuato",
+      "carpetas": 14,
+      "tasa": 0.43,
+      "yoyRatePct": 32
+    },
+    {
+      "delito": "Trata de personas",
+      "ciudad": "León",
+      "carpetas": 6,
+      "tasa": 0.69,
+      "yoyRatePct": 71
+    },
+    {
+      "delito": "Trata de personas",
+      "ciudad": "Irapuato",
+      "carpetas": 1,
+      "tasa": 0.31,
+      "yoyRatePct": -60
+    },
+    {
+      "delito": "Trata de personas",
+      "ciudad": "Celaya",
+      "carpetas": 3,
+      "tasa": 1.08,
+      "yoyRatePct": 99
+    },
+    {
+      "delito": "Trata de personas",
+      "ciudad": "Salamanca",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Trata de personas",
+      "ciudad": "Silao",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": null
+    },
+    {
+      "delito": "Trata de personas",
+      "ciudad": "Pénjamo",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": -100
+    },
+    {
+      "delito": "Trata de personas",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 0,
+      "tasa": 0.0,
+      "yoyRatePct": -100
+    },
+    {
+      "delito": "Narcomenudeo",
+      "ciudad": "México",
+      "carpetas": 51929,
+      "tasa": 77.73,
+      "yoyRatePct": -1
+    },
+    {
+      "delito": "Narcomenudeo",
+      "ciudad": "Guanajuato",
+      "carpetas": 5562,
+      "tasa": 170.78,
+      "yoyRatePct": -47
+    },
+    {
+      "delito": "Narcomenudeo",
+      "ciudad": "León",
+      "carpetas": 1876,
+      "tasa": 214.35,
+      "yoyRatePct": -76
+    },
+    {
+      "delito": "Narcomenudeo",
+      "ciudad": "Irapuato",
+      "carpetas": 927,
+      "tasa": 289.97,
+      "yoyRatePct": 75
+    },
+    {
+      "delito": "Narcomenudeo",
+      "ciudad": "Celaya",
+      "carpetas": 231,
+      "tasa": 83.29,
+      "yoyRatePct": -17
+    },
+    {
+      "delito": "Narcomenudeo",
+      "ciudad": "Salamanca",
+      "carpetas": 268,
+      "tasa": 173.56,
+      "yoyRatePct": 88
+    },
+    {
+      "delito": "Narcomenudeo",
+      "ciudad": "Silao",
+      "carpetas": 307,
+      "tasa": 292.13,
+      "yoyRatePct": 153
+    },
+    {
+      "delito": "Narcomenudeo",
+      "ciudad": "Pénjamo",
+      "carpetas": 164,
+      "tasa": 195.94,
+      "yoyRatePct": 70
+    },
+    {
+      "delito": "Narcomenudeo",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 165,
+      "tasa": 172.13,
+      "yoyRatePct": 10
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "ciudad": "México",
+      "carpetas": 79779,
+      "tasa": 119.42,
+      "yoyRatePct": 2
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "ciudad": "Guanajuato",
+      "carpetas": 9016,
+      "tasa": 276.84,
+      "yoyRatePct": 4
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "ciudad": "León",
+      "carpetas": 2060,
+      "tasa": 235.37,
+      "yoyRatePct": 5
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "ciudad": "Irapuato",
+      "carpetas": 971,
+      "tasa": 303.73,
+      "yoyRatePct": -15
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "ciudad": "Celaya",
+      "carpetas": 936,
+      "tasa": 337.5,
+      "yoyRatePct": 23
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "ciudad": "Salamanca",
+      "carpetas": 436,
+      "tasa": 282.36,
+      "yoyRatePct": 27
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "ciudad": "Silao",
+      "carpetas": 433,
+      "tasa": 412.03,
+      "yoyRatePct": 14
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "ciudad": "Pénjamo",
+      "carpetas": 186,
+      "tasa": 222.23,
+      "yoyRatePct": 4
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "ciudad": "San Miguel de Allende",
+      "carpetas": 449,
+      "tasa": 468.41,
+      "yoyRatePct": -12
+    }
+  ]
+}
