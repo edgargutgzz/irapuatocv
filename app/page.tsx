@@ -57,7 +57,7 @@ export default function Home() {
 
   if (showHero) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center font-sans px-10 lg:px-6" style={{ backgroundColor: "var(--page-plane)" }}>
+      <div className="min-h-screen flex flex-col items-center justify-start lg:justify-center pt-24 lg:pt-0 font-sans px-10 lg:px-6" style={{ backgroundColor: "var(--page-plane)" }}>
         <div className="max-w-xl w-full text-center">
           <div className="inline-block bg-white rounded-2xl p-4 mb-8">
             <Image src="/irapuato-logo.jpg" alt="Irapuato ¿Cómo Vamos?" width={260} height={76} className="h-14 w-auto mx-auto" priority />
