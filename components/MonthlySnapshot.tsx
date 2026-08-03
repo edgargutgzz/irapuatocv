@@ -44,7 +44,7 @@ export default function MonthlySnapshot() {
                   <span>{r.delito}</span>
                   {r.vsMismoMesAnioAnterior === null ? (
                     <span className="inline-flex items-center gap-0.5 font-semibold" style={{ color: "var(--status-good)" }}>
-                      <ArrowDown size={12} strokeWidth={2.5} /> sin casos
+                      <ArrowDown size={12} strokeWidth={2.5} /> disminución
                     </span>
                   ) : (
                     <DeltaBadge pct={r.vsMismoMesAnioAnterior} />
@@ -63,7 +63,7 @@ export default function MonthlySnapshot() {
                   <span>{r.delito}</span>
                   {r.vsMismoMesAnioAnterior === null ? (
                     <span className="inline-flex items-center gap-0.5 font-semibold" style={{ color: "var(--status-critical)" }}>
-                      <ArrowUp size={12} strokeWidth={2.5} /> nuevo
+                      <ArrowUp size={12} strokeWidth={2.5} /> aumento
                     </span>
                   ) : (
                     <DeltaBadge pct={r.vsMismoMesAnioAnterior} />
