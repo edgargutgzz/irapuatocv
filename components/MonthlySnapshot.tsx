@@ -44,7 +44,7 @@ export default function MonthlySnapshot() {
                   <span>{r.delito}</span>
                   {r.vsMismoMesAnioAnterior === null ? (
                     <span className="inline-flex items-center gap-0.5 font-semibold" style={{ color: "var(--status-good)" }}>
-                      <ArrowDown size={12} strokeWidth={2.5} /> a cero
+                      <ArrowDown size={12} strokeWidth={2.5} /> sin casos
                     </span>
                   ) : (
                     <DeltaBadge pct={r.vsMismoMesAnioAnterior} />
