@@ -264,7 +264,7 @@ export default function Home() {
                       label={d}
                       value={fmt(row.carpetas)}
                       deltaPct={row.yoyRatePct}
-                      deltaNote="carpetas 2026 (ene–jun) vs 2025"
+                      deltaNote="carpetas ene–jun 2026 · % = tasa proyectada a 12 meses vs. 2025"
                     />
                   );
                 })}
