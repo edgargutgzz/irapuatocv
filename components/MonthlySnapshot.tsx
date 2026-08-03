@@ -5,6 +5,13 @@ function fmt(n: number): string {
   return n.toLocaleString("es-MX");
 }
 
+const MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+function fmtMes(mes: string): string {
+  const [year, month] = mes.split("-");
+  return `${MESES[Number(month) - 1]} ${year}`;
+}
+
 function DeltaBadge({ pct }: { pct: number | null }) {
   if (pct === null) return <span style={{ color: "var(--text-muted)" }}>—</span>;
   const isUp = pct > 0;
@@ -102,7 +109,7 @@ export default function MonthlySnapshot() {
 
       <section className="rounded-2xl overflow-hidden" style={{ backgroundColor: "var(--surface-1)", border: "1px solid var(--border)" }}>
         <div className="p-6 pb-4">
-          <p className="text-base font-semibold">Detalle por delito — {meta.mes}</p>
+          <p className="text-base font-semibold">Detalle por delito — {fmtMes(meta.mes)}</p>
           <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>
             Carpetas del mes y participación respecto al total del estado de Guanajuato
           </p>
@@ -134,7 +141,7 @@ export default function MonthlySnapshot() {
           </table>
         </div>
         <p className="text-xs px-6 py-4" style={{ color: "var(--text-muted)" }}>
-          Fuente: Observatorio Ciudadano Irapuato ¿Cómo Vamos? — Reporte de Incidencia Delictiva, {meta.mes}.
+          Fuente: Observatorio Ciudadano Irapuato ¿Cómo Vamos? — Reporte de Incidencia Delictiva, {fmtMes(meta.mes)}.
         </p>
       </section>
     </div>
