@@ -14,9 +14,9 @@ import { data, trendFor, comparativoFor, irapuato2026 } from "@/lib/data";
 const TrendChart = dynamic(() => import("@/components/TrendChart"), { ssr: false, loading: () => <ChartSkeleton /> });
 const ComparisonChart = dynamic(() => import("@/components/ComparisonChart"), { ssr: false, loading: () => <ChartSkeleton height={480} /> });
 
-const DIMENSIONS: { label: string; enabled: boolean; Icon: LucideIcon }[] = [
-  { label: "Resumen Mensual", enabled: true, Icon: Calendar },
-  { label: "Seguridad", enabled: true, Icon: ShieldCheck },
+const DIMENSIONS: { label: string; description: string; enabled: boolean; Icon: LucideIcon }[] = [
+  { label: "Resumen Mensual", description: "Vista general · los 17 delitos", enabled: true, Icon: Calendar },
+  { label: "Seguridad", description: "Detalle y tendencia por delito", enabled: true, Icon: ShieldCheck },
 ];
 
 const HEADLINE_DELITOS = [
@@ -107,8 +107,10 @@ export default function Home() {
                 key={dim.label}
                 disabled={!dim.enabled}
                 onClick={() => dim.enabled && setActiveDimension(dim.label)}
-                className="w-full text-left px-5 py-2.5 text-sm transition-all flex items-center gap-3"
+                className="w-full text-left py-2.5 text-sm transition-all flex items-start gap-3"
                 style={{
+                  paddingLeft: "17px",
+                  paddingRight: "20px",
                   color: isActive ? "var(--icv-red)" : dim.enabled ? "var(--text-primary)" : "var(--text-muted)",
                   cursor: dim.enabled ? "pointer" : "default",
                   backgroundColor: isActive ? "rgba(169,0,0,0.07)" : "transparent",
@@ -116,13 +118,20 @@ export default function Home() {
                   fontWeight: isActive ? 600 : 400,
                 }}
               >
-                <dim.Icon size={17} className="flex-shrink-0" style={{ opacity: dim.enabled ? 1 : 0.4 }} />
-                {dim.label}
-                {!dim.enabled && (
-                  <span className="ml-auto text-[10px] font-semibold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: "var(--gridline)", color: "var(--text-muted)" }}>
-                    próx.
+                <dim.Icon size={17} className="flex-shrink-0 mt-0.5" style={{ opacity: dim.enabled ? 1 : 0.4 }} />
+                <span className="flex-1 min-w-0">
+                  <span className="flex items-center justify-between gap-2">
+                    {dim.label}
+                    {!dim.enabled && (
+                      <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full flex-shrink-0" style={{ backgroundColor: "var(--gridline)", color: "var(--text-muted)" }}>
+                        próx.
+                      </span>
+                    )}
                   </span>
-                )}
+                  <span className="block text-xs mt-0.5" style={{ color: isActive ? "var(--icv-red)" : "var(--text-muted)", opacity: isActive ? 0.8 : 1, fontWeight: 400 }}>
+                    {dim.description}
+                  </span>
+                </span>
               </button>
             );
           })}
@@ -173,7 +182,7 @@ export default function Home() {
                     key={dim.label}
                     disabled={!dim.enabled}
                     onClick={() => { if (dim.enabled) { setActiveDimension(dim.label); setDrawerOpen(false); } }}
-                    className="w-full text-left px-5 py-3 text-sm transition-all flex items-center gap-3"
+                    className="w-full text-left px-5 py-3 text-sm transition-all flex items-start gap-3"
                     style={{
                       color: isActive ? "var(--icv-red)" : dim.enabled ? "var(--text-primary)" : "var(--text-muted)",
                       cursor: dim.enabled ? "pointer" : "default",
@@ -182,13 +191,20 @@ export default function Home() {
                       fontWeight: isActive ? 600 : 400,
                     }}
                   >
-                    <dim.Icon size={17} style={{ opacity: dim.enabled ? 1 : 0.4 }} />
-                    {dim.label}
-                    {!dim.enabled && (
-                      <span className="ml-auto text-[10px] font-semibold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: "var(--gridline)", color: "var(--text-muted)" }}>
-                        próx.
+                    <dim.Icon size={17} className="mt-0.5" style={{ opacity: dim.enabled ? 1 : 0.4 }} />
+                    <span className="flex-1 min-w-0">
+                      <span className="flex items-center justify-between gap-2">
+                        {dim.label}
+                        {!dim.enabled && (
+                          <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full flex-shrink-0" style={{ backgroundColor: "var(--gridline)", color: "var(--text-muted)" }}>
+                            próx.
+                          </span>
+                        )}
                       </span>
-                    )}
+                      <span className="block text-xs mt-0.5" style={{ color: isActive ? "var(--icv-red)" : "var(--text-muted)", opacity: isActive ? 0.8 : 1, fontWeight: 400 }}>
+                        {dim.description}
+                      </span>
+                    </span>
                   </button>
                 );
               })}
