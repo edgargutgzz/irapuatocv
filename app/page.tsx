@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { ShieldCheck, Users, Bus, Building2, Calendar } from "lucide-react";
+import { ShieldCheck, Calendar } from "lucide-react";
 import dynamic from "next/dynamic";
 import type { LucideIcon } from "lucide-react";
 import Image from "next/image";
@@ -17,9 +17,6 @@ const ComparisonChart = dynamic(() => import("@/components/ComparisonChart"), { 
 const DIMENSIONS: { label: string; enabled: boolean; Icon: LucideIcon }[] = [
   { label: "Resumen Mensual", enabled: true, Icon: Calendar },
   { label: "Seguridad", enabled: true, Icon: ShieldCheck },
-  { label: "Percepción Ciudadana", enabled: false, Icon: Users },
-  { label: "Movilidad", enabled: false, Icon: Bus },
-  { label: "Desarrollo Urbano", enabled: false, Icon: Building2 },
 ];
 
 const HEADLINE_DELITOS = [
