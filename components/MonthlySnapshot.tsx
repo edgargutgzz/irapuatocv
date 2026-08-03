@@ -39,7 +39,7 @@ export default function MonthlySnapshot() {
       <section className="rounded-2xl p-6" style={{ backgroundColor: "var(--surface-1)", border: "1px solid var(--border)" }}>
         <p className="text-base font-semibold">{meta.titulo}</p>
         <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>
-          Carpetas de investigación abiertas en el mes, comparadas contra el mismo mes del año anterior
+          Carpetas de investigación abiertas en el <strong style={{ color: "var(--text-secondary)" }}>municipio de Irapuato</strong>, comparadas contra el mismo mes del año anterior
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
@@ -111,7 +111,7 @@ export default function MonthlySnapshot() {
         <div className="p-6 pb-4">
           <p className="text-base font-semibold">Detalle por delito — {fmtMes(meta.mes)}</p>
           <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>
-            Carpetas del mes y participación respecto al total del estado de Guanajuato
+            Carpetas del mes en el municipio de Irapuato · la última columna muestra qué % del total estatal de Guanajuato representa Irapuato
           </p>
         </div>
         <div className="overflow-x-auto">
