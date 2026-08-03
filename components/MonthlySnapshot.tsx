@@ -121,7 +121,6 @@ export default function MonthlySnapshot() {
                 <th className="text-left font-semibold px-6 py-2.5" style={{ color: "var(--text-muted)" }}>Delito</th>
                 <th className="text-right font-semibold px-4 py-2.5" style={{ color: "var(--text-muted)" }}>Carpetas (mes)</th>
                 <th className="text-right font-semibold px-4 py-2.5" style={{ color: "var(--text-muted)" }}>vs. mes anterior</th>
-                <th className="text-right font-semibold px-4 py-2.5 hidden lg:table-cell" style={{ color: "var(--text-muted)" }}>ene–jun 2026 vs. ene–jun 2025</th>
                 <th className="text-right font-semibold px-6 py-2.5 hidden lg:table-cell" style={{ color: "var(--text-muted)" }}>% del estado</th>
               </tr>
             </thead>
@@ -131,7 +130,6 @@ export default function MonthlySnapshot() {
                   <td className="px-6 py-2.5">{r.delito}</td>
                   <td className="text-right px-4 py-2.5 font-semibold">{fmt(r.carpetasMes)}</td>
                   <td className="text-right px-4 py-2.5"><DeltaBadge pct={r.vsMesAnterior} /></td>
-                  <td className="text-right px-4 py-2.5 hidden lg:table-cell"><DeltaBadge pct={r.vsAcumulado} /></td>
                   <td className="text-right px-6 py-2.5 hidden lg:table-cell" style={{ color: "var(--text-secondary)" }}>
                     {r.pctEstado !== null ? `${r.pctEstado}%` : "—"}
                   </td>
