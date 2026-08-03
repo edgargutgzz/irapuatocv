@@ -43,7 +43,7 @@ export default function Home() {
   }, [drawerOpen]);
 
   const trendRows = trendFor(selected);
-  const comparativoRows = comparativoFor(selected);
+  const comparativoRows = comparativoFor(selected).filter((r) => r.ciudad !== "México");
 
   if (showHero) {
     return (
@@ -265,7 +265,7 @@ export default function Home() {
                 <div className="mb-4">
                   <p className="text-base font-semibold">{selected} — comparativo por ciudad</p>
                   <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>
-                    Tasa por cada 100,000 habitantes · Acumulado 2026 (ene–jun) · Corredor industrial de Guanajuato + México
+                    Tasa por cada 100,000 habitantes · Acumulado 2026 (ene–jun) · Corredor industrial de Guanajuato
                   </p>
                 </div>
                 <ComparisonChart rows={comparativoRows} />
