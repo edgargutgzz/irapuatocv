@@ -28,6 +28,7 @@ function DeltaBadge({ pct }: { pct: number | null }) {
 
 function BarRow({
   label,
+  carpetas,
   pct,
   maxAbs,
   color,
@@ -35,6 +36,7 @@ function BarRow({
   fallbackIcon: FallbackIcon,
 }: {
   label: string;
+  carpetas: number;
   pct: number | null;
   maxAbs: number;
   color: string;
@@ -48,8 +50,13 @@ function BarRow({
         className="absolute inset-y-0 left-0 rounded-lg"
         style={{ width: `${widthPct}%`, backgroundColor: color, opacity: 0.13 }}
       />
-      <div className="relative flex items-center justify-between gap-3 px-2.5 py-1.5">
-        <span className="text-sm">{label}</span>
+      <div className="relative flex items-center justify-between gap-3 px-3 py-2">
+        <span className="min-w-0">
+          <span className="block text-sm truncate">{label}</span>
+          <span className="block text-xs" style={{ color: "var(--text-muted)" }}>
+            {fmt(carpetas)} carpetas
+          </span>
+        </span>
         {pct === null ? (
           <span className="inline-flex items-center gap-0.5 text-sm font-semibold flex-shrink-0" style={{ color }}>
             <FallbackIcon size={12} strokeWidth={2.5} /> {fallbackLabel}
@@ -82,14 +89,18 @@ export default function MonthlySnapshot() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
           <div className="rounded-xl p-4" style={{ border: "1px solid var(--border)" }}>
-            <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--status-good)" }}>
-              {meta.resumen.disminuyeron} delitos disminuyeron
-            </p>
+            <div className="flex items-baseline gap-2 mb-3">
+              <span className="text-3xl font-bold" style={{ color: "var(--status-good)" }}>{meta.resumen.disminuyeron}</span>
+              <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--text-muted)" }}>
+                delitos disminuyeron
+              </span>
+            </div>
             <ul className="space-y-1">
               {disminuyeron.map((r) => (
                 <BarRow
                   key={r.delito}
                   label={r.delito}
+                  carpetas={r.carpetasMes}
                   pct={r.vsMismoMesAnioAnterior}
                   maxAbs={disminuyeronMax}
                   color="var(--status-good)"
@@ -100,14 +111,18 @@ export default function MonthlySnapshot() {
             </ul>
           </div>
           <div className="rounded-xl p-4" style={{ border: "1px solid var(--border)" }}>
-            <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--status-critical)" }}>
-              {meta.resumen.aumentaron} delitos aumentaron
-            </p>
+            <div className="flex items-baseline gap-2 mb-3">
+              <span className="text-3xl font-bold" style={{ color: "var(--status-critical)" }}>{meta.resumen.aumentaron}</span>
+              <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--text-muted)" }}>
+                delitos aumentaron
+              </span>
+            </div>
             <ul className="space-y-1">
               {aumentaron.map((r) => (
                 <BarRow
                   key={r.delito}
                   label={r.delito}
+                  carpetas={r.carpetasMes}
                   pct={r.vsMismoMesAnioAnterior}
                   maxAbs={aumentaronMax}
                   color="var(--status-critical)"
@@ -123,9 +138,12 @@ export default function MonthlySnapshot() {
             )}
           </div>
           <div className="rounded-xl p-4" style={{ border: "1px solid var(--border)" }}>
-            <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--text-muted)" }}>
-              {sinActividad.length} sin actividad
-            </p>
+            <div className="flex items-baseline gap-2 mb-3">
+              <span className="text-3xl font-bold" style={{ color: "var(--text-muted)" }}>{sinActividad.length}</span>
+              <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--text-muted)" }}>
+                sin actividad
+              </span>
+            </div>
             <ul className="space-y-2 text-sm">
               {sinActividad.map((r) => (
                 <li key={r.delito} className="flex items-center justify-between gap-3">
@@ -141,40 +159,8 @@ export default function MonthlySnapshot() {
             </p>
           </div>
         </div>
-      </section>
 
-      <section className="rounded-2xl overflow-hidden" style={{ backgroundColor: "var(--surface-1)", border: "1px solid var(--border)" }}>
-        <div className="p-6 pb-4">
-          <p className="text-base font-semibold">Detalle por delito — {fmtMes(meta.mes)}</p>
-          <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>
-            Carpetas del mes en el municipio de Irapuato · la última columna muestra qué % del total estatal de Guanajuato representa Irapuato
-          </p>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm" style={{ borderCollapse: "collapse" }}>
-            <thead>
-              <tr style={{ borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}>
-                <th className="text-left font-semibold px-6 py-2.5" style={{ color: "var(--text-muted)" }}>Delito</th>
-                <th className="text-right font-semibold px-4 py-2.5" style={{ color: "var(--text-muted)" }}>Carpetas (mes)</th>
-                <th className="text-right font-semibold px-4 py-2.5" style={{ color: "var(--text-muted)" }}>vs. mes anterior</th>
-                <th className="text-right font-semibold px-6 py-2.5 hidden lg:table-cell" style={{ color: "var(--text-muted)" }}>% del estado</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((r) => (
-                <tr key={r.delito} style={{ borderBottom: "1px solid var(--gridline)" }}>
-                  <td className="px-6 py-2.5">{r.delito}</td>
-                  <td className="text-right px-4 py-2.5 font-semibold">{fmt(r.carpetasMes)}</td>
-                  <td className="text-right px-4 py-2.5"><DeltaBadge pct={r.vsMesAnterior} /></td>
-                  <td className="text-right px-6 py-2.5 hidden lg:table-cell" style={{ color: "var(--text-secondary)" }}>
-                    {r.pctEstado !== null ? `${r.pctEstado}%` : "—"}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <p className="text-xs px-6 py-4" style={{ color: "var(--text-muted)" }}>
+        <p className="text-xs text-center mt-6" style={{ color: "var(--text-muted)" }}>
           Fuente: Observatorio Ciudadano Irapuato ¿Cómo Vamos? — Reporte de Incidencia Delictiva, {fmtMes(meta.mes)}.
         </p>
       </section>
