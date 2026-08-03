@@ -7,9 +7,8 @@ import type { LucideIcon } from "lucide-react";
 import Image from "next/image";
 
 import ChartSkeleton from "@/components/ChartSkeleton";
-import StatTile from "@/components/StatTile";
 import MonthlySnapshot from "@/components/MonthlySnapshot";
-import { data, trendFor, comparativoFor, irapuato2026 } from "@/lib/data";
+import { data, trendFor, comparativoFor } from "@/lib/data";
 
 const TrendChart = dynamic(() => import("@/components/TrendChart"), { ssr: false, loading: () => <ChartSkeleton /> });
 const ComparisonChart = dynamic(() => import("@/components/ComparisonChart"), { ssr: false, loading: () => <ChartSkeleton height={480} /> });
@@ -26,12 +25,6 @@ const HEADLINE_DELITOS = [
   "Narcomenudeo",
   "Robo a casa habitación",
 ];
-
-const STAT_DELITOS = ["Homicidio doloso", "Extorsión", "Violencia familiar", "Narcomenudeo", "Robo a casa habitación"];
-
-function fmt(n: number): string {
-  return n.toLocaleString("es-MX");
-}
 
 export default function Home() {
   const [selected, setSelected] = useState("Homicidio doloso");
@@ -253,23 +246,6 @@ export default function Home() {
         <main className="flex-1 px-4 lg:px-8 py-4 lg:py-6 space-y-4 lg:space-y-6">
           {activeDimension === "Seguridad" ? (
             <>
-              {/* Stat row */}
-              <section className="grid grid-cols-2 lg:grid-cols-5 gap-3">
-                {STAT_DELITOS.map((d) => {
-                  const row = irapuato2026(d);
-                  if (!row) return null;
-                  return (
-                    <StatTile
-                      key={d}
-                      label={d}
-                      value={fmt(row.carpetas)}
-                      deltaPct={row.yoyRatePct}
-                      deltaNote="carpetas ene–jun 2026 · % = tasa proyectada a 12 meses vs. 2025"
-                    />
-                  );
-                })}
-              </section>
-
               {/* Trend chart */}
               <section className="rounded-2xl p-6" style={{ backgroundColor: "var(--surface-1)", border: "1px solid var(--border)" }}>
                 <div className="mb-4">
