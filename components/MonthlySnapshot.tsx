@@ -26,6 +26,42 @@ function DeltaBadge({ pct }: { pct: number | null }) {
   );
 }
 
+function BarRow({
+  label,
+  pct,
+  maxAbs,
+  color,
+  fallbackLabel,
+  fallbackIcon: FallbackIcon,
+}: {
+  label: string;
+  pct: number | null;
+  maxAbs: number;
+  color: string;
+  fallbackLabel: string;
+  fallbackIcon: typeof ArrowUp;
+}) {
+  const widthPct = pct === null ? 18 : Math.max(6, (Math.abs(pct) / maxAbs) * 100);
+  return (
+    <li className="relative rounded-lg overflow-hidden">
+      <div
+        className="absolute inset-y-0 left-0 rounded-lg"
+        style={{ width: `${widthPct}%`, backgroundColor: color, opacity: 0.13 }}
+      />
+      <div className="relative flex items-center justify-between gap-3 px-2.5 py-1.5">
+        <span className="text-sm">{label}</span>
+        {pct === null ? (
+          <span className="inline-flex items-center gap-0.5 text-sm font-semibold flex-shrink-0" style={{ color }}>
+            <FallbackIcon size={12} strokeWidth={2.5} /> {fallbackLabel}
+          </span>
+        ) : (
+          <span className="flex-shrink-0"><DeltaBadge pct={pct} /></span>
+        )}
+      </div>
+    </li>
+  );
+}
+
 export default function MonthlySnapshot() {
   const { meta, rows } = monthlySnapshot;
   const disminuyeron = rows.filter((r) => (r.vsMismoMesAnioAnterior ?? 0) < 0 || (r.vsMismoMesAnioAnterior === null && r.delito === "Secuestro"));
@@ -33,6 +69,8 @@ export default function MonthlySnapshot() {
   const igual = rows.filter((r) => r.vsMismoMesAnioAnterior === 0);
   const clasificados = new Set([...disminuyeron, ...aumentaron, ...igual].map((r) => r.delito));
   const sinActividad = rows.filter((r) => !clasificados.has(r.delito));
+  const disminuyeronMax = Math.max(...disminuyeron.map((r) => Math.abs(r.vsMismoMesAnioAnterior ?? 0)), 1);
+  const aumentaronMax = Math.max(...aumentaron.map((r) => Math.abs(r.vsMismoMesAnioAnterior ?? 0)), 1);
 
   return (
     <div className="space-y-4 lg:space-y-6">
@@ -47,18 +85,17 @@ export default function MonthlySnapshot() {
             <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--status-good)" }}>
               {meta.resumen.disminuyeron} delitos disminuyeron
             </p>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-1">
               {disminuyeron.map((r) => (
-                <li key={r.delito} className="flex items-center justify-between gap-3">
-                  <span>{r.delito}</span>
-                  {r.vsMismoMesAnioAnterior === null ? (
-                    <span className="inline-flex items-center gap-0.5 font-semibold" style={{ color: "var(--status-good)" }}>
-                      <ArrowDown size={12} strokeWidth={2.5} /> disminución
-                    </span>
-                  ) : (
-                    <DeltaBadge pct={r.vsMismoMesAnioAnterior} />
-                  )}
-                </li>
+                <BarRow
+                  key={r.delito}
+                  label={r.delito}
+                  pct={r.vsMismoMesAnioAnterior}
+                  maxAbs={disminuyeronMax}
+                  color="var(--status-good)"
+                  fallbackLabel="disminución"
+                  fallbackIcon={ArrowDown}
+                />
               ))}
             </ul>
           </div>
@@ -66,18 +103,17 @@ export default function MonthlySnapshot() {
             <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--status-critical)" }}>
               {meta.resumen.aumentaron} delitos aumentaron
             </p>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-1">
               {aumentaron.map((r) => (
-                <li key={r.delito} className="flex items-center justify-between gap-3">
-                  <span>{r.delito}</span>
-                  {r.vsMismoMesAnioAnterior === null ? (
-                    <span className="inline-flex items-center gap-0.5 font-semibold" style={{ color: "var(--status-critical)" }}>
-                      <ArrowUp size={12} strokeWidth={2.5} /> aumento
-                    </span>
-                  ) : (
-                    <DeltaBadge pct={r.vsMismoMesAnioAnterior} />
-                  )}
-                </li>
+                <BarRow
+                  key={r.delito}
+                  label={r.delito}
+                  pct={r.vsMismoMesAnioAnterior}
+                  maxAbs={aumentaronMax}
+                  color="var(--status-critical)"
+                  fallbackLabel="aumento"
+                  fallbackIcon={ArrowUp}
+                />
               ))}
             </ul>
             {igual.length > 0 && (
