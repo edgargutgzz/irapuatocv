@@ -14,8 +14,8 @@ const TrendChart = dynamic(() => import("@/components/TrendChart"), { ssr: false
 const ComparisonChart = dynamic(() => import("@/components/ComparisonChart"), { ssr: false, loading: () => <ChartSkeleton height={480} /> });
 
 const DIMENSIONS: { label: string; description: string; enabled: boolean; Icon: LucideIcon }[] = [
-  { label: "Resumen Mensual", description: "Vista general · los 17 delitos", enabled: true, Icon: Calendar },
-  { label: "Seguridad", description: "Detalle y tendencia por delito", enabled: true, Icon: ShieldCheck },
+  { label: "Resumen Mensual", description: "Vista general · delitos de alto impacto", enabled: true, Icon: Calendar },
+  { label: "Seguridad", description: "Tendencia histórica por delito", enabled: true, Icon: ShieldCheck },
 ];
 
 const HEADLINE_DELITOS = [
