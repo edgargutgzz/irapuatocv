@@ -22,15 +22,10 @@ const DIMENSIONS: { label: string; enabled: boolean; Icon: LucideIcon }[] = [
 const HEADLINE_DELITOS = [
   "Homicidio doloso",
   "Extorsión",
-  "Robo de vehículo",
-  "Robo a casa habitación",
-  "Robo a negocio",
-  "Violación",
   "Violencia familiar",
-  "Narcomenudeo",
 ];
 
-const STAT_DELITOS = ["Homicidio doloso", "Extorsión", "Violencia familiar", "Narcomenudeo"];
+const STAT_DELITOS = ["Homicidio doloso", "Extorsión", "Violencia familiar"];
 
 function fmt(n: number): string {
   return n.toLocaleString("es-MX");
@@ -229,7 +224,7 @@ export default function Home() {
           {activeDimension === "Seguridad" ? (
             <>
               {/* Stat row */}
-              <section className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+              <section className="grid grid-cols-1 lg:grid-cols-3 gap-3">
                 {STAT_DELITOS.map((d) => {
                   const row = irapuato2026(d);
                   if (!row) return null;
