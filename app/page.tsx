@@ -14,8 +14,8 @@ const TrendChart = dynamic(() => import("@/components/TrendChart"), { ssr: false
 const ComparisonChart = dynamic(() => import("@/components/ComparisonChart"), { ssr: false, loading: () => <ChartSkeleton height={480} /> });
 
 const DIMENSIONS: { label: string; description: string; enabled: boolean; Icon: LucideIcon }[] = [
-  { label: "Resumen Mensual", description: "Vista general · delitos de alto impacto", enabled: true, Icon: Calendar },
-  { label: "Seguridad", description: "Tendencia histórica por delito", enabled: true, Icon: ShieldCheck },
+  { label: "Comparativo Mensual", description: "Vista general · delitos de alto impacto", enabled: true, Icon: Calendar },
+  { label: "Tendencia Anual", description: "Histórico por delito · 2021–2026", enabled: true, Icon: ShieldCheck },
 ];
 
 const HEADLINE_DELITOS = [
@@ -28,7 +28,7 @@ const HEADLINE_DELITOS = [
 
 export default function Home() {
   const [selected, setSelected] = useState("Homicidio doloso");
-  const [activeDimension, setActiveDimension] = useState("Resumen Mensual");
+  const [activeDimension, setActiveDimension] = useState("Comparativo Mensual");
   const [showHero, setShowHero] = useState(true);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
@@ -208,7 +208,7 @@ export default function Home() {
 
       {/* Main content — this is the part that scrolls on desktop */}
       <div className="flex-1 flex flex-col min-w-0 lg:h-screen lg:min-h-0 lg:overflow-y-auto">
-        {activeDimension === "Seguridad" && (
+        {activeDimension === "Tendencia Anual" && (
           <div className="px-4 lg:px-8 pt-3 pb-0" style={{ backgroundColor: "var(--surface-1)", borderBottom: "1px solid var(--border)" }}>
             <div className="flex gap-1 mt-3 overflow-x-auto">
               {HEADLINE_DELITOS.map((d) => {
@@ -244,7 +244,7 @@ export default function Home() {
         )}
 
         <main className="flex-1 px-4 lg:px-8 py-4 lg:py-6 space-y-4 lg:space-y-6">
-          {activeDimension === "Seguridad" ? (
+          {activeDimension === "Tendencia Anual" ? (
             <>
               {/* Trend chart */}
               <section className="rounded-2xl p-6" style={{ backgroundColor: "var(--surface-1)", border: "1px solid var(--border)" }}>
