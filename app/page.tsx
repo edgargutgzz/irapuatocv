@@ -1,13 +1,14 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { ShieldCheck, Users, Bus, Building2 } from "lucide-react";
+import { ShieldCheck, Users, Bus, Building2, Calendar } from "lucide-react";
 import dynamic from "next/dynamic";
 import type { LucideIcon } from "lucide-react";
 import Image from "next/image";
 
 import ChartSkeleton from "@/components/ChartSkeleton";
 import StatTile from "@/components/StatTile";
+import MonthlySnapshot from "@/components/MonthlySnapshot";
 import { data, trendFor, comparativoFor, irapuato2026 } from "@/lib/data";
 
 const TrendChart = dynamic(() => import("@/components/TrendChart"), { ssr: false, loading: () => <ChartSkeleton /> });
@@ -15,6 +16,7 @@ const ComparisonChart = dynamic(() => import("@/components/ComparisonChart"), { 
 
 const DIMENSIONS: { label: string; enabled: boolean; Icon: LucideIcon }[] = [
   { label: "Seguridad", enabled: true, Icon: ShieldCheck },
+  { label: "Resumen Mensual", enabled: true, Icon: Calendar },
   { label: "Percepción Ciudadana", enabled: false, Icon: Users },
   { label: "Movilidad", enabled: false, Icon: Bus },
   { label: "Desarrollo Urbano", enabled: false, Icon: Building2 },
@@ -39,6 +41,7 @@ function fmt(n: number): string {
 
 export default function Home() {
   const [selected, setSelected] = useState("Homicidio doloso");
+  const [activeDimension, setActiveDimension] = useState("Seguridad");
   const [showHero, setShowHero] = useState(true);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
@@ -104,11 +107,12 @@ export default function Home() {
             Dimensiones
           </p>
           {DIMENSIONS.map((dim) => {
-            const isActive = dim.label === "Seguridad";
+            const isActive = dim.label === activeDimension;
             return (
               <button
                 key={dim.label}
                 disabled={!dim.enabled}
+                onClick={() => dim.enabled && setActiveDimension(dim.label)}
                 className="w-full text-left px-5 py-2.5 text-sm transition-all flex items-center gap-3"
                 style={{
                   color: isActive ? "var(--icv-red)" : dim.enabled ? "var(--text-primary)" : "var(--text-muted)",
@@ -169,12 +173,12 @@ export default function Home() {
             </div>
             <nav className="flex-1 py-3">
               {DIMENSIONS.map((dim) => {
-                const isActive = dim.label === "Seguridad";
+                const isActive = dim.label === activeDimension;
                 return (
                   <button
                     key={dim.label}
                     disabled={!dim.enabled}
-                    onClick={() => dim.enabled && setDrawerOpen(false)}
+                    onClick={() => { if (dim.enabled) { setActiveDimension(dim.label); setDrawerOpen(false); } }}
                     className="w-full text-left px-5 py-3 text-sm transition-all flex items-center gap-3"
                     style={{
                       color: isActive ? "var(--icv-red)" : dim.enabled ? "var(--text-primary)" : "var(--text-muted)",
@@ -201,73 +205,81 @@ export default function Home() {
 
       {/* Main content — this is the part that scrolls on desktop */}
       <div className="flex-1 flex flex-col min-w-0 lg:h-screen lg:min-h-0 lg:overflow-y-auto">
-        <div className="px-4 lg:px-8 pt-3 pb-0" style={{ backgroundColor: "var(--surface-1)", borderBottom: "1px solid var(--border)" }}>
-          <div className="flex gap-1 mt-3 overflow-x-auto">
-            {HEADLINE_DELITOS.map((d) => {
-              const active = selected === d;
-              return (
-                <button
-                  key={d}
-                  onClick={() => setSelected(d)}
-                  className="px-4 py-3 text-sm font-medium whitespace-nowrap transition-all cursor-pointer"
-                  style={{
-                    color: active ? "var(--icv-red)" : "var(--text-primary)",
-                    borderBottom: active ? "2.5px solid var(--icv-red)" : "2.5px solid transparent",
-                  }}
-                >
-                  {d}
-                </button>
-              );
-            })}
+        {activeDimension === "Seguridad" && (
+          <div className="px-4 lg:px-8 pt-3 pb-0" style={{ backgroundColor: "var(--surface-1)", borderBottom: "1px solid var(--border)" }}>
+            <div className="flex gap-1 mt-3 overflow-x-auto">
+              {HEADLINE_DELITOS.map((d) => {
+                const active = selected === d;
+                return (
+                  <button
+                    key={d}
+                    onClick={() => setSelected(d)}
+                    className="px-4 py-3 text-sm font-medium whitespace-nowrap transition-all cursor-pointer"
+                    style={{
+                      color: active ? "var(--icv-red)" : "var(--text-primary)",
+                      borderBottom: active ? "2.5px solid var(--icv-red)" : "2.5px solid transparent",
+                    }}
+                  >
+                    {d}
+                  </button>
+                );
+              })}
+            </div>
           </div>
-        </div>
+        )}
 
         <main className="flex-1 px-4 lg:px-8 py-4 lg:py-6 space-y-4 lg:space-y-6">
-          {/* Stat row */}
-          <section className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-            {STAT_DELITOS.map((d) => {
-              const row = irapuato2026(d);
-              if (!row) return null;
-              return (
-                <StatTile
-                  key={d}
-                  label={d}
-                  value={fmt(row.carpetas)}
-                  deltaPct={row.yoyRatePct}
-                  deltaNote="carpetas 2026 (ene–jun) vs 2025"
-                />
-              );
-            })}
-          </section>
+          {activeDimension === "Seguridad" ? (
+            <>
+              {/* Stat row */}
+              <section className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                {STAT_DELITOS.map((d) => {
+                  const row = irapuato2026(d);
+                  if (!row) return null;
+                  return (
+                    <StatTile
+                      key={d}
+                      label={d}
+                      value={fmt(row.carpetas)}
+                      deltaPct={row.yoyRatePct}
+                      deltaNote="carpetas 2026 (ene–jun) vs 2025"
+                    />
+                  );
+                })}
+              </section>
 
-          {/* Trend chart */}
-          <section className="rounded-2xl p-6" style={{ backgroundColor: "var(--surface-1)", border: "1px solid var(--border)" }}>
-            <div className="mb-4">
-              <p className="text-base font-semibold">{selected}</p>
-              <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>
-                Tasa por cada 100,000 habitantes · Irapuato vs. Estado de Guanajuato · 2021–2026
+              {/* Trend chart */}
+              <section className="rounded-2xl p-6" style={{ backgroundColor: "var(--surface-1)", border: "1px solid var(--border)" }}>
+                <div className="mb-4">
+                  <p className="text-base font-semibold">{selected}</p>
+                  <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>
+                    Tasa por cada 100,000 habitantes · Irapuato vs. Estado de Guanajuato · 2021–2026
+                  </p>
+                </div>
+                <TrendChart rows={trendRows} />
+                <p className="text-xs mt-3" style={{ color: "var(--text-muted)" }}>
+                  * 2026 es acumulado enero–junio; la tasa 2026 es una proyección a 12 meses para comparar con años completos.
+                </p>
+              </section>
+
+              {/* Comparison chart */}
+              <section className="rounded-2xl p-6" style={{ backgroundColor: "var(--surface-1)", border: "1px solid var(--border)" }}>
+                <div className="mb-4">
+                  <p className="text-base font-semibold">{selected} — comparativo por ciudad</p>
+                  <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>
+                    Tasa por cada 100,000 habitantes · Acumulado 2026 (ene–jun) · Corredor industrial de Guanajuato + México
+                  </p>
+                </div>
+                <ComparisonChart rows={comparativoRows} />
+              </section>
+
+              <p className="text-xs text-center pb-2" style={{ color: "var(--text-muted)" }}>
+                Fuente: {data.meta.fuente}, {data.meta.reporteMes}.
               </p>
-            </div>
-            <TrendChart rows={trendRows} />
-            <p className="text-xs mt-3" style={{ color: "var(--text-muted)" }}>
-              * 2026 es acumulado enero–junio; la tasa 2026 es una proyección a 12 meses para comparar con años completos.
-            </p>
-          </section>
-
-          {/* Comparison chart */}
-          <section className="rounded-2xl p-6" style={{ backgroundColor: "var(--surface-1)", border: "1px solid var(--border)" }}>
-            <div className="mb-4">
-              <p className="text-base font-semibold">{selected} — comparativo por ciudad</p>
-              <p className="text-sm mt-0.5" style={{ color: "var(--text-muted)" }}>
-                Tasa por cada 100,000 habitantes · Acumulado 2026 (ene–jun) · Corredor industrial de Guanajuato + México
-              </p>
-            </div>
-            <ComparisonChart rows={comparativoRows} />
-          </section>
-
-          <p className="text-xs text-center pb-2" style={{ color: "var(--text-muted)" }}>
-            Fuente: {data.meta.fuente}, {data.meta.reporteMes}.
-          </p>
+            </>
+          ) : (
+            <MonthlySnapshot />
+          )}
         </main>
       </div>
     </div>

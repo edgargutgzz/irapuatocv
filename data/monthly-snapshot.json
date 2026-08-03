@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "mes": "2026-06",
+    "titulo": "Comparativo mensual — junio 2026 vs. junio 2025",
+    "sourceUrl": "https://irapuatocomovamos.org/2026/07/23/reporte-de-incidencia-delictiva-en-irapuato-guanajuato-a-junio-2026/",
+    "resumen": {
+      "disminuyeron": 10,
+      "aumentaron": 4,
+      "igual": 1
+    }
+  },
+  "rows": [
+    {
+      "delito": "Homicidio doloso",
+      "carpetasMes": 13,
+      "victimasMes": 14,
+      "vsMismoMesAnioAnterior": 0,
+      "vsMesAnterior": -28,
+      "vsAcumulado": 17,
+      "pctEstado": 19,
+      "estadoBucket": "encima"
+    },
+    {
+      "delito": "Feminicidio",
+      "carpetasMes": 1,
+      "victimasMes": 1,
+      "vsMismoMesAnioAnterior": null,
+      "vsMesAnterior": null,
+      "vsAcumulado": 50,
+      "pctEstado": 27,
+      "estadoBucket": "encima",
+      "nota": "Aumentó (mes base fue 0 en el periodo anterior)"
+    },
+    {
+      "delito": "Homicidio culposo",
+      "carpetasMes": 11,
+      "victimasMes": 11,
+      "vsMismoMesAnioAnterior": -31,
+      "vsMesAnterior": -31,
+      "vsAcumulado": 1,
+      "pctEstado": 15,
+      "estadoBucket": "encima"
+    },
+    {
+      "delito": "Secuestro",
+      "carpetasMes": 0,
+      "victimasMes": null,
+      "vsMismoMesAnioAnterior": null,
+      "vsMesAnterior": null,
+      "vsAcumulado": null,
+      "pctEstado": 0,
+      "estadoBucket": "debajo",
+      "nota": "No registró carpetas en junio 2026"
+    },
+    {
+      "delito": "Extorsión",
+      "carpetasMes": 21,
+      "victimasMes": 21,
+      "vsMismoMesAnioAnterior": 31,
+      "vsMesAnterior": -22,
+      "vsAcumulado": 23,
+      "pctEstado": 24,
+      "estadoBucket": "encima"
+    },
+    {
+      "delito": "Robo con violencia",
+      "carpetasMes": 82,
+      "victimasMes": null,
+      "vsMismoMesAnioAnterior": -43,
+      "vsMesAnterior": -15,
+      "vsAcumulado": -34,
+      "pctEstado": 17,
+      "estadoBucket": "encima"
+    },
+    {
+      "delito": "Robo de vehículo",
+      "carpetasMes": 15,
+      "victimasMes": null,
+      "vsMismoMesAnioAnterior": -12,
+      "vsMesAnterior": -37,
+      "vsAcumulado": -11,
+      "pctEstado": 11,
+      "estadoBucket": "encima"
+    },
+    {
+      "delito": "Robo de motocicletas",
+      "carpetasMes": 40,
+      "victimasMes": null,
+      "vsMismoMesAnioAnterior": -38,
+      "vsMesAnterior": 3,
+      "vsAcumulado": null,
+      "pctEstado": 15,
+      "estadoBucket": "encima"
+    },
+    {
+      "delito": "Robo a casa habitación",
+      "carpetasMes": 14,
+      "victimasMes": null,
+      "vsMismoMesAnioAnterior": -52,
+      "vsMesAnterior": -39,
+      "vsAcumulado": -2,
+      "pctEstado": 10,
+      "estadoBucket": "similar"
+    },
+    {
+      "delito": "Robo a negocio",
+      "carpetasMes": 73,
+      "victimasMes": null,
+      "vsMismoMesAnioAnterior": -31,
+      "vsMesAnterior": -13,
+      "vsAcumulado": -3,
+      "pctEstado": 23,
+      "estadoBucket": "encima"
+    },
+    {
+      "delito": "Robo a transeúntes",
+      "carpetasMes": 2,
+      "victimasMes": null,
+      "vsMismoMesAnioAnterior": -75,
+      "vsMesAnterior": -50,
+      "vsAcumulado": -37,
+      "pctEstado": 28,
+      "estadoBucket": "encima"
+    },
+    {
+      "delito": "Robo transporte público",
+      "carpetasMes": 0,
+      "victimasMes": null,
+      "vsMismoMesAnioAnterior": null,
+      "vsMesAnterior": null,
+      "vsAcumulado": null,
+      "pctEstado": null,
+      "estadoBucket": null,
+      "nota": "No registró carpetas en 2026"
+    },
+    {
+      "delito": "Violación",
+      "carpetasMes": 10,
+      "victimasMes": 15,
+      "vsMismoMesAnioAnterior": -47,
+      "vsMesAnterior": 0,
+      "vsAcumulado": -30,
+      "pctEstado": 11,
+      "estadoBucket": "encima"
+    },
+    {
+      "delito": "Violencia familiar",
+      "carpetasMes": 255,
+      "victimasMes": 344,
+      "vsMismoMesAnioAnterior": 4,
+      "vsMesAnterior": -12,
+      "vsAcumulado": 5,
+      "pctEstado": 17,
+      "estadoBucket": "encima"
+    },
+    {
+      "delito": "Trata de personas",
+      "carpetasMes": 0,
+      "victimasMes": null,
+      "vsMismoMesAnioAnterior": null,
+      "vsMesAnterior": null,
+      "vsAcumulado": null,
+      "pctEstado": null,
+      "estadoBucket": null,
+      "nota": "No registró carpetas"
+    },
+    {
+      "delito": "Narcomenudeo",
+      "carpetasMes": 159,
+      "victimasMes": null,
+      "vsMismoMesAnioAnterior": 212,
+      "vsMesAnterior": 5,
+      "vsAcumulado": 85,
+      "pctEstado": 17,
+      "estadoBucket": "encima"
+    },
+    {
+      "delito": "Lesiones dolosas",
+      "carpetasMes": 160,
+      "victimasMes": null,
+      "vsMismoMesAnioAnterior": -16,
+      "vsMesAnterior": -8,
+      "vsAcumulado": -19,
+      "pctEstado": 11,
+      "estadoBucket": "encima"
+    }
+  ]
+}
