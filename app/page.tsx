@@ -206,7 +206,7 @@ export default function Home() {
                   <button
                     key={d}
                     onClick={() => setSelected(d)}
-                    className="px-4 py-3 text-sm font-medium whitespace-nowrap transition-all cursor-pointer"
+                    className="px-4 py-3 text-sm font-medium whitespace-nowrap transition-all cursor-pointer flex-shrink-0"
                     style={{
                       color: active ? "var(--icv-red)" : "var(--text-primary)",
                       borderBottom: active ? "2.5px solid var(--icv-red)" : "2.5px solid transparent",
@@ -216,6 +216,18 @@ export default function Home() {
                   </button>
                 );
               })}
+              {data.delitos.filter((d) => !HEADLINE_DELITOS.includes(d)).map((d) => (
+                <span
+                  key={d}
+                  className="px-4 py-3 text-sm font-medium whitespace-nowrap flex-shrink-0 inline-flex items-center gap-1.5"
+                  style={{ color: "var(--text-muted)", borderBottom: "2.5px solid transparent", cursor: "default" }}
+                >
+                  {d}
+                  <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full" style={{ backgroundColor: "var(--gridline)", color: "var(--text-muted)" }}>
+                    próx.
+                  </span>
+                </span>
+              ))}
             </div>
           </div>
         )}
