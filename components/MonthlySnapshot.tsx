@@ -24,6 +24,8 @@ export default function MonthlySnapshot() {
   const disminuyeron = rows.filter((r) => (r.vsMismoMesAnioAnterior ?? 0) < 0 || (r.vsMismoMesAnioAnterior === null && r.delito === "Secuestro"));
   const aumentaron = rows.filter((r) => (r.vsMismoMesAnioAnterior ?? 0) > 0 || (r.vsMismoMesAnioAnterior === null && r.delito === "Feminicidio"));
   const igual = rows.filter((r) => r.vsMismoMesAnioAnterior === 0);
+  const clasificados = new Set([...disminuyeron, ...aumentaron, ...igual].map((r) => r.delito));
+  const sinActividad = rows.filter((r) => !clasificados.has(r.delito));
 
   return (
     <div className="space-y-4 lg:space-y-6">
@@ -33,7 +35,7 @@ export default function MonthlySnapshot() {
           Carpetas de investigación abiertas en el mes, comparadas contra el mismo mes del año anterior
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
           <div className="rounded-xl p-4" style={{ border: "1px solid var(--border)" }}>
             <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--status-good)" }}>
               {meta.resumen.disminuyeron} delitos disminuyeron
@@ -76,6 +78,24 @@ export default function MonthlySnapshot() {
                 Sin cambio: {igual.map((r) => r.delito).join(", ")}
               </p>
             )}
+          </div>
+          <div className="rounded-xl p-4" style={{ border: "1px solid var(--border)" }}>
+            <p className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--text-muted)" }}>
+              {sinActividad.length} sin actividad
+            </p>
+            <ul className="space-y-2 text-sm">
+              {sinActividad.map((r) => (
+                <li key={r.delito} className="flex items-center justify-between gap-3">
+                  <span style={{ color: "var(--text-secondary)" }}>{r.delito}</span>
+                  <span className="inline-flex items-center gap-0.5 font-semibold" style={{ color: "var(--text-muted)" }}>
+                    <Minus size={12} strokeWidth={2.5} /> sin casos
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-xs mt-3 pt-3" style={{ color: "var(--text-muted)", borderTop: "1px solid var(--border)" }}>
+              Sin carpetas registradas en junio 2025 ni junio 2026
+            </p>
           </div>
         </div>
       </section>
