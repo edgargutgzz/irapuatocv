@@ -55,11 +55,8 @@ export default function Home() {
           <h1 className="text-4xl font-bold tracking-tight mb-4" style={{ color: "var(--text-primary)" }}>
             Plataforma de Datos
           </h1>
-          <p className="text-lg mb-3" style={{ color: "var(--text-secondary)" }}>
-            Explora los 16 delitos de alto impacto en Irapuato: tendencia 2021–2026 y comparativo con el corredor industrial de Guanajuato.
-          </p>
-          <p className="text-sm mb-10" style={{ color: "var(--text-muted)" }}>
-            Fuente: {data.meta.fuente} · Reporte {data.meta.reporteMes}
+          <p className="text-lg mb-10" style={{ color: "var(--text-secondary)" }}>
+            Incidencia delictiva en Irapuato · 2021–2026
           </p>
           <button
             onClick={() => setShowHero(false)}
