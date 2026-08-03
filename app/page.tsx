@@ -23,9 +23,11 @@ const HEADLINE_DELITOS = [
   "Homicidio doloso",
   "Extorsión",
   "Violencia familiar",
+  "Narcomenudeo",
+  "Robo a casa habitación",
 ];
 
-const STAT_DELITOS = ["Homicidio doloso", "Extorsión", "Violencia familiar"];
+const STAT_DELITOS = ["Homicidio doloso", "Extorsión", "Violencia familiar", "Narcomenudeo", "Robo a casa habitación"];
 
 function fmt(n: number): string {
   return n.toLocaleString("es-MX");
@@ -236,7 +238,7 @@ export default function Home() {
           {activeDimension === "Seguridad" ? (
             <>
               {/* Stat row */}
-              <section className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+              <section className="grid grid-cols-2 lg:grid-cols-5 gap-3">
                 {STAT_DELITOS.map((d) => {
                   const row = irapuato2026(d);
                   if (!row) return null;
