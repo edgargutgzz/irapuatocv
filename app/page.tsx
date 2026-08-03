@@ -15,8 +15,8 @@ const TrendChart = dynamic(() => import("@/components/TrendChart"), { ssr: false
 const ComparisonChart = dynamic(() => import("@/components/ComparisonChart"), { ssr: false, loading: () => <ChartSkeleton height={480} /> });
 
 const DIMENSIONS: { label: string; enabled: boolean; Icon: LucideIcon }[] = [
-  { label: "Seguridad", enabled: true, Icon: ShieldCheck },
   { label: "Resumen Mensual", enabled: true, Icon: Calendar },
+  { label: "Seguridad", enabled: true, Icon: ShieldCheck },
   { label: "Percepción Ciudadana", enabled: false, Icon: Users },
   { label: "Movilidad", enabled: false, Icon: Bus },
   { label: "Desarrollo Urbano", enabled: false, Icon: Building2 },
