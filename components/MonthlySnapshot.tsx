@@ -43,7 +43,7 @@ function BarRow({
   fallbackLabel: string;
   fallbackIcon: typeof ArrowUp;
 }) {
-  const widthPct = pct === null ? 18 : Math.max(6, (Math.abs(pct) / maxAbs) * 100);
+  const widthPct = pct === null ? 3 : Math.max(6, (Math.abs(pct) / maxAbs) * 100);
   return (
     <li className="relative rounded-lg overflow-hidden">
       <div
@@ -71,8 +71,14 @@ function BarRow({
 
 export default function MonthlySnapshot() {
   const { meta, rows } = monthlySnapshot;
-  const disminuyeron = rows.filter((r) => (r.vsMismoMesAnioAnterior ?? 0) < 0 || (r.vsMismoMesAnioAnterior === null && r.delito === "Secuestro"));
-  const aumentaron = rows.filter((r) => (r.vsMismoMesAnioAnterior ?? 0) > 0 || (r.vsMismoMesAnioAnterior === null && r.delito === "Feminicidio"));
+  const magnitude = (r: { vsMismoMesAnioAnterior: number | null }) =>
+    r.vsMismoMesAnioAnterior === null ? -1 : Math.abs(r.vsMismoMesAnioAnterior);
+  const disminuyeron = rows
+    .filter((r) => (r.vsMismoMesAnioAnterior ?? 0) < 0 || (r.vsMismoMesAnioAnterior === null && r.delito === "Secuestro"))
+    .sort((a, b) => magnitude(b) - magnitude(a));
+  const aumentaron = rows
+    .filter((r) => (r.vsMismoMesAnioAnterior ?? 0) > 0 || (r.vsMismoMesAnioAnterior === null && r.delito === "Feminicidio"))
+    .sort((a, b) => magnitude(b) - magnitude(a));
   const igual = rows.filter((r) => r.vsMismoMesAnioAnterior === 0);
   const clasificados = new Set([...disminuyeron, ...aumentaron, ...igual].map((r) => r.delito));
   const sinActividad = rows.filter((r) => !clasificados.has(r.delito));
