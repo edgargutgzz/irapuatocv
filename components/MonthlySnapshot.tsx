@@ -21,7 +21,7 @@ function DeltaBadge({ pct }: { pct: number | null }) {
 
 export default function MonthlySnapshot() {
   const { meta, rows } = monthlySnapshot;
-  const disminuyeron = rows.filter((r) => (r.vsMismoMesAnioAnterior ?? 0) < 0);
+  const disminuyeron = rows.filter((r) => (r.vsMismoMesAnioAnterior ?? 0) < 0 || (r.vsMismoMesAnioAnterior === null && r.delito === "Secuestro"));
   const aumentaron = rows.filter((r) => (r.vsMismoMesAnioAnterior ?? 0) > 0 || (r.vsMismoMesAnioAnterior === null && r.delito === "Feminicidio"));
   const igual = rows.filter((r) => r.vsMismoMesAnioAnterior === 0);
 
@@ -42,7 +42,13 @@ export default function MonthlySnapshot() {
               {disminuyeron.map((r) => (
                 <li key={r.delito} className="flex items-center justify-between gap-3">
                   <span>{r.delito}</span>
-                  <DeltaBadge pct={r.vsMismoMesAnioAnterior} />
+                  {r.vsMismoMesAnioAnterior === null ? (
+                    <span className="inline-flex items-center gap-0.5 font-semibold" style={{ color: "var(--status-good)" }}>
+                      <ArrowDown size={12} strokeWidth={2.5} /> a cero
+                    </span>
+                  ) : (
+                    <DeltaBadge pct={r.vsMismoMesAnioAnterior} />
+                  )}
                 </li>
               ))}
             </ul>
