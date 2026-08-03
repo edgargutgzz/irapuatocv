@@ -41,7 +41,7 @@ function fmt(n: number): string {
 
 export default function Home() {
   const [selected, setSelected] = useState("Homicidio doloso");
-  const [activeDimension, setActiveDimension] = useState("Seguridad");
+  const [activeDimension, setActiveDimension] = useState("Resumen Mensual");
   const [showHero, setShowHero] = useState(true);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
