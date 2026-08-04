@@ -29,7 +29,6 @@ const HEADLINE_DELITOS = [
 export default function Home() {
   const [selected, setSelected] = useState("Homicidio doloso");
   const [activeDimension, setActiveDimension] = useState("Tendencia Anual");
-  const [showHero, setShowHero] = useState(true);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
 
@@ -45,49 +44,12 @@ export default function Home() {
   const trendRows = trendFor(selected);
   const comparativoRows = comparativoFor(selected).filter((r) => r.ciudad !== "México");
 
-  if (showHero) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-start lg:justify-center pt-24 lg:pt-0 font-sans px-10 lg:px-6" style={{ backgroundColor: "var(--page-plane)" }}>
-        <div className="max-w-xl w-full text-center">
-          <div className="inline-block bg-white rounded-2xl p-4 mb-8">
-            <Image src="/irapuato-logo.jpg" alt="Irapuato ¿Cómo Vamos?" width={260} height={76} className="h-14 w-auto mx-auto" priority />
-          </div>
-          <h1 className="text-4xl font-bold tracking-tight mb-4" style={{ color: "var(--text-primary)" }}>
-            Plataforma de Datos
-          </h1>
-          <p className="text-lg mb-2" style={{ color: "var(--text-secondary)" }}>
-            Incidencia delictiva en Irapuato · 2021–2026
-          </p>
-          <p className="text-sm mb-10" style={{ color: "var(--text-muted)" }}>
-            Construimos esta plataforma como muestra de lo que podemos hacer para ustedes.
-          </p>
-          <button
-            onClick={() => setShowHero(false)}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-white transition-opacity hover:opacity-90 cursor-pointer"
-            style={{ backgroundColor: "var(--icv-red)" }}
-          >
-            Explorar datos
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </button>
-          <p className="text-sm mt-6" style={{ color: "var(--text-muted)" }}>
-            ¿Les interesa? Escríbannos a{" "}
-            <a href="mailto:hola@datacomun.com" className="font-semibold hover:underline" style={{ color: "var(--icv-red)" }}>
-              hola@datacomun.com
-            </a>
-          </p>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen lg:h-screen flex flex-col lg:flex-row lg:overflow-hidden font-sans" style={{ backgroundColor: "var(--page-plane)", color: "var(--text-primary)" }}>
       {/* Sidebar — desktop only, fixed height, does not scroll */}
       <aside className="hidden lg:flex w-72 flex-shrink-0 flex-col lg:h-screen lg:overflow-y-auto" style={{ backgroundColor: "var(--surface-1)", borderRight: "1px solid var(--border)" }}>
         <div className="px-5 py-6" style={{ borderBottom: "1px solid var(--border)" }}>
-          <div className="inline-block bg-white rounded-lg p-2 cursor-pointer" onClick={() => setShowHero(true)}>
+          <div className="inline-block bg-white rounded-lg p-2">
             <Image src="/irapuato-logo.jpg" alt="Irapuato ¿Cómo Vamos?" width={200} height={58} className="h-9 w-auto" />
           </div>
         </div>
@@ -146,7 +108,7 @@ export default function Home() {
       {/* Mobile header */}
       <header className="lg:hidden flex items-center justify-between px-4 py-3" style={{ backgroundColor: "var(--surface-1)", borderBottom: "1px solid var(--border)" }}>
         <div className="flex items-center gap-3">
-          <div className="bg-white rounded-lg p-1.5 cursor-pointer" onClick={() => setShowHero(true)}>
+          <div className="bg-white rounded-lg p-1.5">
             <Image src="/irapuato-logo.jpg" alt="Irapuato ¿Cómo Vamos?" width={160} height={46} className="h-7 w-auto" />
           </div>
           <div>
