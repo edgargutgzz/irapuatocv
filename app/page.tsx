@@ -55,8 +55,11 @@ export default function Home() {
           <h1 className="text-4xl font-bold tracking-tight mb-4" style={{ color: "var(--text-primary)" }}>
             Plataforma de Datos
           </h1>
-          <p className="text-lg mb-10" style={{ color: "var(--text-secondary)" }}>
+          <p className="text-lg mb-2" style={{ color: "var(--text-secondary)" }}>
             Incidencia delictiva en Irapuato · 2021–2026
+          </p>
+          <p className="text-sm mb-10" style={{ color: "var(--text-muted)" }}>
+            Construimos esta plataforma como muestra de lo que podemos hacer para ustedes.
           </p>
           <button
             onClick={() => setShowHero(false)}
@@ -68,6 +71,12 @@ export default function Home() {
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
+          <p className="text-sm mt-6" style={{ color: "var(--text-muted)" }}>
+            ¿Les interesa? Escríbannos a{" "}
+            <a href="mailto:hola@datacomun.com" className="font-semibold hover:underline" style={{ color: "var(--icv-red)" }}>
+              hola@datacomun.com
+            </a>
+          </p>
         </div>
       </div>
     );
