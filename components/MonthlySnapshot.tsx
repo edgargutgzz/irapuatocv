@@ -167,8 +167,6 @@ export default function MonthlySnapshot() {
         </div>
 
         <p className="text-xs text-center mt-6" style={{ color: "var(--text-muted)" }}>
-          Una carpeta de investigación es un caso nuevo abierto por la Fiscalía en ese mes — no el total de casos que siguen activos de meses anteriores.
-          <br />
           Fuente: Observatorio Ciudadano Irapuato ¿Cómo Vamos? — Reporte de Incidencia Delictiva, {fmtMes(meta.mes)}.
         </p>
       </section>

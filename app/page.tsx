@@ -14,8 +14,8 @@ const TrendChart = dynamic(() => import("@/components/TrendChart"), { ssr: false
 const ComparisonChart = dynamic(() => import("@/components/ComparisonChart"), { ssr: false, loading: () => <ChartSkeleton height={480} /> });
 
 const DIMENSIONS: { label: string; description: string; enabled: boolean; Icon: LucideIcon }[] = [
-  { label: "Comparativo Mensual", description: "Vista general · delitos de alto impacto", enabled: true, Icon: Calendar },
   { label: "Tendencia Anual", description: "Histórico por delito · 2021–2026", enabled: true, Icon: ShieldCheck },
+  { label: "Comparativo Mensual", description: "Vista general · delitos de alto impacto", enabled: true, Icon: Calendar },
 ];
 
 const HEADLINE_DELITOS = [
@@ -28,7 +28,7 @@ const HEADLINE_DELITOS = [
 
 export default function Home() {
   const [selected, setSelected] = useState("Homicidio doloso");
-  const [activeDimension, setActiveDimension] = useState("Comparativo Mensual");
+  const [activeDimension, setActiveDimension] = useState("Tendencia Anual");
   const [showHero, setShowHero] = useState(true);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
